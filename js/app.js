@@ -31,16 +31,6 @@ addbnt.onclick = function () {
         }
 
 
-
-
-
-
-
-
-
-
-
-
         // if (document.querySelectorAll(".readybtn").length > 0) {
         //     let tareas = document.querySelectorAll(".readybtn")
         //     let borrar = document.querySelectorAll(".deletebtn")

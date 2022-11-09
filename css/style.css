@@ -114,3 +114,19 @@ body {
     bottom: 5px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 991px) {
+    .container{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 2rem;
+    }
+    .container-input{
+        width: 100%;
+    }
+    .item-todolist{
+        width: 100%;
+    }
+
+}
