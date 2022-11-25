@@ -12,7 +12,7 @@ const add = () => {
         const input = document.querySelector("#entrada")
         const valor = input.value
         if (valor.length == 0 || valor.length < 3) {
-            alert("Ingresa algo po xuxetumare")
+            alert("Enter a Task to do.")
         }
         else {
             let datos = `<div class="item-list"><li class="data">${input.value}</li><span class="readybtn"><i class="fa-solid fa-check"></i></span><span class="deletebtn"><i class="fa-solid fa-trash"></i></span></div>`

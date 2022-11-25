@@ -124,9 +124,24 @@ body {
     }
     .container-input{
         width: 100%;
+        font-size: 12px;
     }
     .item-todolist{
         width: 100%;
     }
-
+    .addbtn{
+        font-size: 15px;
+    }
+    #entrada{
+        font-size: 15px;
+    }
+    .data {
+    font-size: 15px!important;
+    }
+    .readybtn{
+        padding: 6px;
+    }
+    .deletebtn{
+        padding: 6px;
+    }
 }
