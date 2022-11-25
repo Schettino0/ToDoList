@@ -44,12 +44,20 @@ const tasksComplete = () => {
     btnComplete.forEach((e) => {
         e.addEventListener('click', () => {
             e.parentElement.className = "ready"
-            const busqueda = task.indexOf(e.parentElement.innerText)
-            task.splice(busqueda, 1)
             const item = e.parentElement.innerText
-            taskComplete.push(item)
-            localStorage.setItem("tareas", JSON.stringify(task))
-            localStorage.setItem("TareasComplete", JSON.stringify(taskComplete))
+            const validacion = taskComplete.includes(e.parentElement.innerText)
+            if (validacion == true) {
+                localStorage.setItem("tareas", JSON.stringify(task))
+                localStorage.setItem("TareasComplete", JSON.stringify(taskComplete))
+
+            }
+            else {
+                const busqueda = task.indexOf(e.parentElement.innerText)
+                task.splice(busqueda, 1)
+                taskComplete.push(item)
+                localStorage.setItem("tareas", JSON.stringify(task))
+                localStorage.setItem("TareasComplete", JSON.stringify(taskComplete))
+            }
 
         })
     })
